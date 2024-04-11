@@ -1,0 +1,11 @@
+{
+  "python.linting.flake8Enabled": true,
+  "svelte.enable-ts-plugin": true,
+  "languageserver": {
+    "csharp-ls": {
+      "command": "csharp-ls",
+      "filetypes": ["cs"],
+      "rootPatterns": ["*.csproj", ".vim/", ".git/", ".hg/"]
+    }
+  }
+}
