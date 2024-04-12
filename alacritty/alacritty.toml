@@ -1,0 +1,60 @@
+import = ["/home/nuutti/.config/alacritty/themes/themes/seashells.toml"]
+
+[bell]
+duration = 0
+
+[colors]
+draw_bold_text_with_bright_colors = true
+
+[cursor]
+thickness = 0.25
+unfocused_hollow = false
+
+[cursor.style]
+blinking = "Never"
+shape = "Beam"
+
+[env]
+TERM = "xterm-256color"
+
+[font]
+size = 7.0
+
+[font.bold]
+family = "DinaRemasterII"
+style = "Bold"
+
+[font.bold_italic]
+family = "DinaRemasterII"
+style = "Bold Italic"
+
+[font.italic]
+family = "DinaRemasterII"
+style = "Italic"
+
+[font.normal]
+family = "DinaRemasterII"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 1
+
+[[keyboard.bindings]]
+action = "ScrollPageUp"
+key = "U"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "ScrollPageDown"
+key = "D"
+mods = "Alt"
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
+
+[window.padding]
+x = 0
+y = 0
