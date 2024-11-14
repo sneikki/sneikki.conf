@@ -1,4 +1,5 @@
-import = ["/home/nuutti/.config/alacritty/themes/themes/seashells.toml"]
+[general]
+import = ["themes/themes-alacritty/gotham.toml"]
 
 [bell]
 duration = 0
