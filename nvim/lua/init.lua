@@ -51,11 +51,13 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'gosukiwi/vim-atom-dark'
 	Plug 'NLKNguyen/papercolor-theme'
 	Plug 'arcticicestudio/nord-vim' --maybe
-  Plug 'connorholyday/vim-snazzy' --maybe
+	Plug 'connorholyday/vim-snazzy' --maybe
 	Plug 'mhartington/oceanic-next' -- maybe
 	Plug 'ayu-theme/ayu-vim' -- maybe
 	Plug 'EdenEast/nightfox.nvim' -- maybe
 
+	Plug 'j-hui/fidget.nvim'
+	Plug 'nvim-neotest/nvim-nio'
 	Plug 'tpope/vim-commentary'
 	Plug 'sbdchd/neoformat'
 	Plug 'dense-analysis/ale'
@@ -70,7 +72,9 @@ vim.call('plug#begin', '~/.config/nvim/plugged')
 	Plug 'sheerun/vim-polyglot'
 	Plug 'preservim/nerdtree'
 
-	Plug 'rest-nvim/rest.nvim'
+	-- Plug 'manoelcampos/xml2lua'
+	-- Plug 'rest-nvim/rest.nvim'
+	Plug 'rest-nvim/tree-sitter-http'
 	Plug 'nvim-lua/plenary.nvim'
 	Plug 'nvim-treesitter/nvim-treesitter'
 
@@ -129,7 +133,7 @@ vim.api.nvim_set_keymap("n", "<c-s>", ":w<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<c-c>", ":close<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<c-b>", ":bd<cr>", { noremap = true })
 vim.api.nvim_set_keymap("n", "<leader>b!", ":bd!<cr>", { noremap = true })
-vim.api.nvim_set_keymap("n", "<leader>c", "<Plug>RestNvim", { noremap = true })
+-- vim.api.nvim_set_keymap("n", "<leader>c", "<Plug>RestNvim", { noremap = true })
 
 vim.api.nvim_set_keymap("n", "<c-h>", "<c-w>h", { noremap = true })
 vim.api.nvim_set_keymap("n", "<c-l>", "<c-w>l", { noremap = true })
@@ -143,4 +147,4 @@ vim.g.ctrlp_cmd = 'CtrlPMRU .'
 -- vim.g.rainbow_active = 1
 
 vim.cmd("command! -nargs=0 Prettier :call CocAction('runCommand', 'prettier.formatFile')")
-require('rest-nvim').setup()
+-- require('rest-nvim').setup()
