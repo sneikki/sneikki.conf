@@ -1,10 +1,20 @@
 # `sneikki.conf`
 
+## bash
+
+* Customized prompt
+* Some aliased commands
+* Utility functions to save time
+
+***Installation***
+
+`ln -s <path-to-repo>/.bashrc ~/.bashrc`
+
 ## alacritty
 
 * Broad range of color themes, from
 [alacritty/**alacritty-theme**](https://github.com/alacritty/alacritty-theme) and
-[rajasegara/**alacritty-themes**](https://github.com/rajasegar/alacritty-themes)
+[rajasegar/**alacritty-themes**](https://github.com/rajasegar/alacritty-themes)
 * Minor enhancements to look and feel
 
 ***Installation***
@@ -14,6 +24,8 @@ ln -s <path-to-repo>/alacritty/ ~/.config
 ```
 
 ## nvim
+
+Configured with a bunch of plugins and custom commands.
 
 ***Installation***
 
