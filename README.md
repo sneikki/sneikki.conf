@@ -1,4 +1,4 @@
-# `sneikki.dots`
+# `sneikki.conf`
 
 ## alacritty
 
