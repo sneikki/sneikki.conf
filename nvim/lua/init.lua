@@ -112,11 +112,11 @@ function get_git_branch()
 end
 
 vim.opt.statusline =
-	'%#CocListBlackRed#' .. ' [' .. get_git_branch() .. '] ' ..
-	"%#StatusLine#" .. "  %{expand('%:p:h')}  " ..
-	"%#CocListBlackGreen#" .. "  %{expand('%:t')}  " .. "%#Normal#" ..
-	"%=%#StatusLine#  " .. "%p%% " .. "%l:%c " .. "%m " .. "%#CocListBlackYellow#" ..
-  "%#CocListBlackYellow#" .. "  %y  "
+	' [' .. get_git_branch() .. '] ' ..
+	"  %{expand('%:p:h')}  " ..
+	"  %{expand('%:t')}  " ..
+	"%=  " .. "%p%% " .. "%l:%c " .. "%m " ..
+  "  %y  "
 
 vim.cmd('command! Q q!')
 vim.cmd('command! W wq')
